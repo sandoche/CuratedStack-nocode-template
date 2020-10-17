@@ -20,12 +20,12 @@ export function getCategoriesMenu(slug) {
   return firstPart.concat(categoriesClone)
 }
 
-export function getCategories(slug) {
-  return categories.filter((item) => {
-    if (!slug) {
-      return true
-    } else {
-      return item.slug === slug
-    }
-  })
+export async function getCategories(nuxtContent) {
+  const categories = await nuxtContent('categories').fetch()
+  return categories
+}
+
+export async function getCategory(nuxtContent, slug) {
+  const categories = await nuxtContent('categories').where({ slug }).fetch()
+  return categories.length > 0 ? categories[0] : null
 }

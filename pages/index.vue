@@ -34,14 +34,16 @@ export default {
     TheHeader,
     CategoryItem
   },
-  data() {
+  async asyncData({ $content }) {
+    const categories = await getCategories($content)
+
     return {
       title: 'CuratedStack (No-Code) Template',
       description:
         'Collection of free design tools and resources for makers, developers and designers',
       sectionTitle: 'Tools & Resources',
       sectionDescription: 'Find the tool you need in each category.',
-      categories: getCategories()
+      categories
     }
   },
   head() {
