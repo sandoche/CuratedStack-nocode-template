@@ -9,7 +9,6 @@
     />
     <div class="resources">
       <div class="container block">
-        {{ links }}
         <ResourceItem
           v-for="(link, index) in links"
           :key="index"
