@@ -9,6 +9,7 @@
     />
     <div class="resources">
       <div class="container block">
+        {{ links }}
         <ResourceItem
           v-for="(link, index) in links"
           :key="index"
@@ -40,10 +41,11 @@ export default {
     const slug = params.slug
     const category = await getCategory($content, slug)
     const categories = await getCategoriesMenu($content, slug)
+    const links = await getLinks($content)
 
     return {
       slug,
-      links: getLinks(slug),
+      links,
       category,
       categories
     }

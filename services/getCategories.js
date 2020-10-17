@@ -1,7 +1,7 @@
 export const getCategoriesMenu = async ($nuxtContent, slug) => {
   const categories = await $nuxtContent('categories').fetch()
   const categoriesClone = Object.assign([], categories)
-  const indexOfSlug = categoriesClone.indexOf(getCategories(slug)[0])
+  const indexOfSlug = categoriesClone.indexOf(getCategories($nuxtContent, slug))
   const firstPart = categoriesClone.splice(indexOfSlug)
   return firstPart.concat(categoriesClone)
 }
