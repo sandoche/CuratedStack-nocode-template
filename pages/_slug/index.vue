@@ -40,7 +40,7 @@ export default {
     const slug = params.slug
     const category = await getCategory($content, slug)
     const categories = await getCategoriesMenu($content, slug)
-    const links = await getLinks($content)
+    const links = await getLinks($content, slug)
 
     return {
       slug,
