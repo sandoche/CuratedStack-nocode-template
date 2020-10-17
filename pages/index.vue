@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import TheHeader from '../components/TheHeader.vue'
-import CategoryItem from '../components/CategoryItem.vue'
-import { getCategories } from '../services/getCategories'
+import TheHeader from '~/components/TheHeader.vue'
+import CategoryItem from '~/components/CategoryItem.vue'
+import { getCategories } from '~/services/getCategories'
 
 export default {
   name: 'Index',

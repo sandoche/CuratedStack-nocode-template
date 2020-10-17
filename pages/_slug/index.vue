@@ -23,11 +23,11 @@
 </template>
 
 <script>
-import TheNavbar from '../../components/TheNavbar.vue'
-import TheHeader from '../../components/TheHeader.vue'
-import ResourceItem from '../../components/ResourceItem.vue'
-import { getLinks } from '../../services/getLinks'
-import { getCategory, getCategoriesMenu } from '../../services/getCategories'
+import TheNavbar from '~/components/TheNavbar.vue'
+import TheHeader from '~/components/TheHeader.vue'
+import ResourceItem from '~/components/ResourceItem.vue'
+import { getLinks } from '~/services/getLinks'
+import { getCategory, getCategoriesMenu } from '~/services/getCategories'
 
 export default {
   name: 'Category',
