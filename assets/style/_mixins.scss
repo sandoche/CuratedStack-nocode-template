@@ -1,0 +1,7 @@
+/* stylelint-disable */
+@mixin container($padding) {
+  max-width: $container-width;
+  padding: 0 $padding;
+  margin: auto;
+}
+/* stylelint-enable */

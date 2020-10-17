@@ -1,0 +1,43 @@
+:root {
+  --font-xl: 28px;
+  --font-lg: 24px;
+  --font-md: 20px;
+  --font-sm: 16px;
+  --font-xs: 14px;
+  --font-xxs: 12px;
+
+  @media (max-width: 768px) {
+    --font-xl: 26px;
+    --font-lg: 20px;
+    --font-md: 18px;
+    --font-sm: 14px;
+    --font-xs: 14px;
+    --font-xxs: 12px;
+  }
+}
+
+// Variables
+
+$container-width: 1200px;
+$container-padding: 30px;
+
+$primary-color: #5a51fe;
+$secondary-color: #8751fe;
+$text-color: #222;
+$link-color: $primary-color;
+$background-color: #f6f8fa;
+$grey-color: #908f9e;
+$medium-grey-color: lighten($grey-color, 30);
+$light-grey-color: #f6f8fa;
+
+$font-xl: var(--font-xl);
+$font-lg: var(--font-lg);
+$font-md: var(--font-md);
+$font-sm: var(--font-sm);
+$font-xs: var(--font-xs);
+$font-xxs: var(--font-xxs);
+
+$system-font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell",
+  "Helvetica Neue", sans-serif;
+$primary-font-family: $system-font-family;
+$secondary-font-family: "Roboto Mono", monospace;

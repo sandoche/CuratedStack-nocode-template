@@ -7,9 +7,11 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "npm run lint:js && npm run lint:style"
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore --fix",
+    "lint": "npm run lint:js && npm run lint:style",
+    "analyze": "babel-node scripts/analyze.js",
+    "get-logos": "babel-node scripts/getLogos.js"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -40,7 +42,10 @@
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
     "prettier": "^2.1.2",
+    "sass-loader": "^10.0.3",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"

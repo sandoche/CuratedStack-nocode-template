@@ -1,63 +1,86 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">curatedstack-nocode-template</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <TheHeader :title="title" :description="description" />
+    <section class="tools">
+      <div class="container">
+        <h2 class="section-title">
+          {{ sectionTitle }}
+        </h2>
+        <p class="section-description">
+          {{ sectionDescription }}
+        </p>
+        <div class="categories">
+          <CategoryItem
+            v-for="(category, index) in categories"
+            :key="index"
+            :slug="category.slug"
+            :name="category.name"
+            :icon="category.icon"
+          />
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
-export default {}
+import TheHeader from '../components/TheHeader.vue'
+import CategoryItem from '../components/CategoryItem.vue'
+import { getCategories } from '../services/getCategories'
+
+export default {
+  name: 'Index',
+  components: {
+    TheHeader,
+    CategoryItem
+  },
+  data() {
+    return {
+      title: 'CuratedStack (No-Code) Template',
+      description:
+        'Collection of free design tools and resources for makers, developers and designers',
+      sectionTitle: 'Tools & Resources',
+      sectionDescription: 'Find the tool you need in each category.',
+      categories: getCategories()
+    }
+  },
+  head() {
+    return {
+      title: `${this.title} | ${this.description}`,
+      meta: [{ name: this.title, content: this.description }]
+    }
+  }
+}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss" scoped>
+@import '../assets/style/variables';
+
+.tools {
+  background-color: $light-grey-color;
+  padding: 64px 0;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
-.links {
-  padding-top: 15px;
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 320px) {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
