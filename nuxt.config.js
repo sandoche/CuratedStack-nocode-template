@@ -47,7 +47,7 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
-    nestedProperties: ['categories_slugs']
+    nestedProperties: ['categories_slugs.slug']
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
