@@ -1,4 +1,4 @@
-export async function getCategoriesMenu(nuxtContent, slug) {
+export const getCategoriesMenu = async (nuxtContent, slug) => {
   const categories = await nuxtContent('categories').fetch()
   const categoriesClone = Object.assign([], categories)
   const indexOfSlug = categoriesClone.indexOf(getCategories(slug)[0])
@@ -6,12 +6,12 @@ export async function getCategoriesMenu(nuxtContent, slug) {
   return firstPart.concat(categoriesClone)
 }
 
-export async function getCategories(nuxtContent) {
+export const getCategories = async (nuxtContent) => {
   const categories = await nuxtContent('categories').fetch()
   return categories
 }
 
-export async function getCategory(nuxtContent, slug) {
+export const getCategory = async (nuxtContent, slug) => {
   const categories = await nuxtContent('categories').where({ slug }).fetch()
   return categories.length > 0 ? categories[0] : null
 }
