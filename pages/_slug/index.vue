@@ -39,12 +39,13 @@ export default {
   async asyncData({ params, $content }) {
     const slug = params.slug
     const category = await getCategory($content, slug)
+    const categories = await getCategoriesMenu($content, slug)
 
     return {
       slug,
       links: getLinks(slug),
       category,
-      categories: getCategoriesMenu(slug)
+      categories
     }
   },
   head() {
