@@ -1,17 +1,18 @@
-export const getCategoriesMenu = async ($nuxtContent, slug) => {
-  const categories = await $nuxtContent('categories').fetch()
+import categories from '../content/categories.json'
+
+export const getCategoriesMenu = (slug) => {
   const categoriesClone = Object.assign([], categories)
-  const indexOfSlug = categoriesClone.indexOf(getCategories($nuxtContent, slug))
+  const indexOfSlug = categoriesClone.indexOf(getCategories(slug)[0])
   const firstPart = categoriesClone.splice(indexOfSlug)
   return firstPart.concat(categoriesClone)
 }
 
-export const getCategories = async ($nuxtContent) => {
-  const categories = await $nuxtContent('categories').fetch()
-  return categories
-}
-
-export const getCategory = async ($nuxtContent, slug) => {
-  const categories = await $nuxtContent('categories').where({ slug }).fetch()
-  return categories.length > 0 ? categories[0] : null
+export const getCategories = (slug) => {
+  return categories.filter((item) => {
+    if (!slug) {
+      return true
+    } else {
+      return item.slug === slug
+    }
+  })
 }

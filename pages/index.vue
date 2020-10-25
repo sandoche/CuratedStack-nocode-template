@@ -34,8 +34,8 @@ export default {
     TheHeader,
     CategoryItem
   },
-  async asyncData({ $content }) {
-    const categories = await getCategories($content)
+  asyncData() {
+    const categories = getCategories()
 
     return {
       title: 'CuratedStack (No-Code) Template',

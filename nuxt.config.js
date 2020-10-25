@@ -48,9 +48,6 @@ export default {
     '@nuxt/content'
   ],
 
-  // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
-
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {}
 }

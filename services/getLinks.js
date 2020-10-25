@@ -1,9 +1,7 @@
-export const getLinks = async ($nuxtContent, slug) => {
-  const allLinks = await $nuxtContent('links').fetch()
+import links from '../content/links.json'
 
-  // Using filter instead of nuxtContent where because of an error
-  // check https://github.com/nuxt/content/issues/581
-  return allLinks.filter((item) => {
+export function getLinks(slug) {
+  return links.filter((item) => {
     return item.categories_slugs.includes(slug)
   })
 }

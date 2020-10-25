@@ -27,7 +27,7 @@ import TheNavbar from '~/components/TheNavbar.vue'
 import TheHeader from '~/components/TheHeader.vue'
 import ResourceItem from '~/components/ResourceItem.vue'
 import { getLinks } from '~/services/getLinks'
-import { getCategory, getCategoriesMenu } from '~/services/getCategories'
+import { getCategories, getCategoriesMenu } from '~/services/getCategories'
 
 export default {
   name: 'Category',
@@ -36,17 +36,13 @@ export default {
     TheHeader,
     ResourceItem
   },
-  async asyncData({ params, $content }) {
+  asyncData({ params }) {
     const slug = params.slug
-    const category = await getCategory($content, slug)
-    const categories = await getCategoriesMenu($content, slug)
-    const links = await getLinks($content, slug)
-
     return {
       slug,
-      links,
-      category,
-      categories
+      links: getLinks(slug),
+      category: getCategories(slug)[0],
+      categories: getCategoriesMenu(slug)
     }
   },
   head() {
