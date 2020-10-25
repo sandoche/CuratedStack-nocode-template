@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: dev
+  squash_merges: true
+
+media_folder: "static/images/logos"
+public_folder: "/images/logos"
+site_url: https://curatedstacktemplate.learn.uno
+
+collections:
+  - label: "Categories"
+    name: "categories"
+    extension: "json"
+    files:
+      - label: "Categories"
+        name: "categories"
+        file: "data/categories.json"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: Slug, name: slug, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Icon, name: icon, widget: text }
+  - label: "Links"
+    name: "links"
+    extension: "json"
+    files:
+      - label: "Links"
+        name: "links"
+        file: "data/links.json"
+        fields:
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - {
+                  label: Categories slugs,
+                  name: categories_slugs,
+                  widget: list,
+                }
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Url, name: url, widget: string }
+              - { label: Icon, name: icon, widget: text }
