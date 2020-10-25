@@ -2,9 +2,7 @@
   {
     "slug": "kanbanote",
     "categories_slugs": [
-      {
-        "slug": "productivity"
-      }
+      "productivity"
     ],
     "name": "Kanbanote",
     "description": "Evernote as a Kanban board",
@@ -14,9 +12,7 @@
   {
     "slug": "darkmode",
     "categories_slugs": [
-      {
-        "slug": "open-source"
-      }
+      "open-source"
     ],
     "name": "Darkmode.js",
     "description": "Add a dark-mode / night-mode to your website in a few seconds",
