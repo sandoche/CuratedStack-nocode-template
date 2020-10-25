@@ -44,4 +44,15 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Description, name: description, widget: text }
               - { label: Url, name: url, widget: string }
-              - { label: Icon, name: icon, widget: text }
+              - { label: Icon, name: icon, widget: image }
+  - label: "Config"
+    name: "config"
+    extension: "json"
+    files:
+      - label: "Config"
+        name: "config"
+        file: "data/config.json"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Url, name: contact_link, widget: string }
