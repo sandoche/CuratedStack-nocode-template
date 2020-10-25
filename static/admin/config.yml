@@ -5,7 +5,6 @@ backend:
 
 media_folder: "static/images/logos"
 public_folder: "/images/logos"
-site_url: https://curatedstacktemplate.learn.uno
 
 collections:
   - label: "Categories"
