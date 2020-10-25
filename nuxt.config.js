@@ -22,6 +22,9 @@ export default {
         href:
           'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap'
       }
+    ],
+    script: [
+      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
     ]
   },
 
