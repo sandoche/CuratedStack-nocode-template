@@ -34,11 +34,11 @@ export default {
     TheHeader,
     CategoryItem
   },
-  asyncData() {
+  asyncData({ app }) {
     const categories = getCategories()
 
     return {
-      title: 'CuratedStack (No-Code) Template',
+      title: app.i18n.t('title'),
       description:
         'Collection of free design tools and resources for makers, developers and designers',
       sectionTitle: 'Tools & Resources',

@@ -1,4 +1,6 @@
 import getConfig from './services/getConfig'
+import getLocale from './services/getLocale'
+
 const config = getConfig()
 
 export default {
@@ -43,8 +45,21 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-i18n'
   ],
+
+  // https://i18n.nuxtjs.org/
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: getLocale('en')
+      }
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {}
