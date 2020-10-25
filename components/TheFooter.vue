@@ -3,18 +3,20 @@
     <div class="container">
       <div class="contact">
         <h2 class="section-title">
-          {{ contactTitle }}
+          {{ $t('footer.title') }}
         </h2>
         <p class="section-description">
-          {{ contactDescription }}
+          {{ $t('footer.description') }}
         </p>
-        <a class="button" href="">Contact</a>
+        <a class="button" href="">{{ $t('buttons.footer.contact') }}</a>
       </div>
     </div>
     <div class="copyright">
       <div class="container">
-        {{ copyright
-        }}<a href="https://www.sandoche.com" target="_blank">Sandoche</a>
+        {{ $t('footer.copyright')
+        }}<a :href="$t('footer.author.website')" target="_blank">{{
+          $t('footer.author.name')
+        }}</a>
       </div>
     </div>
   </footer>
@@ -22,18 +24,7 @@
 
 <script>
 export default {
-  name: 'TheFooter',
-  data() {
-    return {
-      updateTitle: 'Get updates',
-      updateDescription:
-        'Register to the newsletter to get the updates of the latest amazing tools',
-      contactTitle: 'Any tool to suggest?',
-      contactDescription:
-        'Any idea? Any amazing tool forgotten? Feel free to send it!',
-      copyright: 'Made with ❤️ in Europe 🇪🇺 by '
-    }
-  }
+  name: 'TheFooter'
 }
 </script>
 

@@ -39,10 +39,9 @@ export default {
 
     return {
       title: app.i18n.t('title'),
-      description:
-        'Collection of free design tools and resources for makers, developers and designers',
-      sectionTitle: 'Tools & Resources',
-      sectionDescription: 'Find the tool you need in each category.',
+      description: app.i18n.t('description'),
+      sectionTitle: app.i18n.t('tools.title'),
+      sectionDescription: app.i18n.t('tools.description'),
       categories
     }
   },

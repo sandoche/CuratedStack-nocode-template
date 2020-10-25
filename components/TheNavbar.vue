@@ -1,11 +1,15 @@
 <template>
   <nav>
     <div class="topbar">
-      <nuxt-link to="/" class="back-button topbar__col"> ← Back </nuxt-link>
+      <nuxt-link to="/" class="back-button topbar__col">
+        ← {{ $t('buttons.navigation.back') }}
+      </nuxt-link>
       <nuxt-link to="/" class="logo topbar__col">
         <img v-if="!icon" src="/icon.png" alt="Logo" class="logo" />
       </nuxt-link>
-      <a class="contact-button" href="">Contact</a>
+      <a class="contact-button" href="">{{
+        $t('buttons.navigation.contact')
+      }}</a>
     </div>
     <div class="categorybar">
       <nuxt-link

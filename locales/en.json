@@ -1,3 +1,26 @@
 {
-  "title": "CuratedStack (No-Code) Template"
+  "title": "CuratedStack (No-Code) Template",
+  "description": "Build a curated directory of websites without or with code",
+  "tools": {
+    "title": "Tools & Resources",
+    "description": "Find the tool you need in each category"
+  },
+  "footer": {
+    "title": "Any tool to suggest?",
+    "description": "Any idea? Any amazing tool forgotten? Feel free to send it!",
+    "copyright": "Made with ❤️ in Europe 🇪🇺 by ",
+    "author": {
+      "name": "Sandoche",
+      "website": "https://www.sandoche.com"
+    }
+  },
+  "buttons": {
+    "navigation": {
+      "back": "Back",
+      "contact": "Contact"
+    },
+    "footer": {
+      "contact": "Contact"
+    }
+  }
 }
