@@ -7,7 +7,7 @@
       <nuxt-link to="/" class="logo topbar__col">
         <img v-if="!icon" src="/icon.png" alt="Logo" class="logo" />
       </nuxt-link>
-      <a class="contact-button" href="">{{
+      <a class="contact-button" :href="contactLink" target="_blank">{{
         $t('buttons.navigation.contact')
       }}</a>
     </div>
@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import getConfig from '~/services/getConfig'
+
 export default {
   name: 'TheNavbar',
   props: {
@@ -38,6 +40,11 @@ export default {
     slug: {
       type: String,
       default: null
+    }
+  },
+  data() {
+    return {
+      contactLink: getConfig().contact_link
     }
   }
 }

@@ -8,7 +8,9 @@
         <p class="section-description">
           {{ $t('footer.description') }}
         </p>
-        <a class="button" href="">{{ $t('buttons.footer.contact') }}</a>
+        <a class="button" :href="contactLink" target="_blank">{{
+          $t('buttons.footer.contact')
+        }}</a>
       </div>
     </div>
     <div class="copyright">
@@ -23,8 +25,15 @@
 </template>
 
 <script>
+import getConfig from '~/services/getConfig'
+
 export default {
-  name: 'TheFooter'
+  name: 'TheFooter',
+  data() {
+    return {
+      contactLink: getConfig().contact_link
+    }
+  }
 }
 </script>
 
