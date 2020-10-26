@@ -11,7 +11,7 @@ collections:
     name: "categories"
     extension: "json"
     files:
-      - label: "Categories"
+      - label: "All categories"
         name: "categories"
         file: "content/categories.json"
         fields:
@@ -31,24 +31,24 @@ collections:
         name: "links"
         file: "content/links.json"
         fields:
-          - label: "Links"
+          - label: "All links"
             name: "links"
             widget: "list"
             fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Url, name: url, widget: string }
+              - { label: Icon, name: icon, widget: image }
               - {
                   label: Categories slugs,
                   name: categories_slugs,
                   widget: list,
                 }
-              - { label: Name, name: name, widget: string }
-              - { label: Description, name: description, widget: text }
-              - { label: Url, name: url, widget: string }
-              - { label: Icon, name: icon, widget: image }
   - label: "Config"
     name: "config"
     extension: "json"
     files:
-      - label: "Config"
+      - label: "Main settings"
         name: "config"
         file: "content/config.json"
         fields:
