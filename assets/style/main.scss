@@ -80,3 +80,53 @@ h6 {
 a {
   color: $primary-color;
 }
+
+.darkmode-layer,
+.darkmode-toggle {
+  z-index: 500;
+}
+
+.darkmode--activated {
+  .icon,
+  .logo,
+  h1,
+  h2,
+  .button,
+  .resource-item, {
+    position: relative;
+    z-index: 501;
+    mix-blend-mode: difference;
+  }
+
+  h3 {
+    color: #fff !important;
+  }
+
+  .resource-item {
+    border-bottom: 0 !important;
+
+    .icon {
+      background-color: #222;
+    }
+  }
+
+  .topbar {
+    z-index: 600 !important;
+    background-color: #111 !important;
+
+    input {
+      background-color: #111 !important;
+      border-color: #333 !important;
+    }
+
+    .logo {
+      mix-blend-mode: unset !important;
+    }
+  }
+
+  .footer {
+    a {
+      mix-blend-mode: difference;
+    }
+  }
+}
