@@ -1,5 +1,6 @@
 import getConfig from './services/getConfig'
 import getLocale from './services/getLocale'
+import { getLinks } from './services/getLinks'
 
 const config = getConfig()
 
@@ -49,8 +50,45 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    {
+      src: '@nuxtjs/lunr-module',
+      options: {
+        ref: 'id',
+        fields: ['name', 'description', 'tags'],
+        css: true
+      }
+    }
   ],
+
+  hooks: {
+    async ready(nuxt) {
+      const links = getLinks()
+      let i = 0
+
+      for (const link of links) {
+        const document = {
+          locale: 'en',
+          document: {
+            id: String(i),
+            name: link.name,
+            description: link.description,
+            tags: link.categories_slugs.join(',')
+          },
+          meta: {
+            name: link.name,
+            url: link.url,
+            icon: link.icon
+          }
+        }
+        
+        i++
+        console.log(document)
+        nuxt.callHook('lunr:document', document)
+        
+      }
+    }
+  },
 
   // https://i18n.nuxtjs.org/
   i18n: {

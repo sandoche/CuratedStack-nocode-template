@@ -1,6 +1,7 @@
 <template>
   <div>
     <TheHeader :title="title" :description="description" />
+    <TheSearch />
     <section class="tools">
       <div class="container">
         <h2 class="section-title">
@@ -25,6 +26,7 @@
 
 <script>
 import TheHeader from '~/components/TheHeader.vue'
+import TheSearch from '~/components/TheSearch.vue'
 import CategoryItem from '~/components/CategoryItem.vue'
 import { getCategories } from '~/services/getCategories'
 
@@ -32,7 +34,8 @@ export default {
   name: 'Index',
   components: {
     TheHeader,
-    CategoryItem
+    CategoryItem,
+    TheSearch
   },
   asyncData({ app }) {
     const categories = getCategories()
