@@ -1,4 +1,6 @@
-import links from '../content/links.json'
+import linksObject from '../content/links.json'
+
+const links = linksObject.links
 
 export function getLinks(slug) {
   if (slug) {

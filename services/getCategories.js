@@ -1,4 +1,6 @@
-import categories from '../content/categories.json'
+import categoriesObject from '../content/categories.json'
+
+const categories = categoriesObject.categories
 
 export const getCategoriesMenu = (slug) => {
   const categoriesClone = Object.assign([], categories)

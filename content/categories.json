@@ -1,14 +1,15 @@
-[
-  {
-    "slug": "open-source",
-    "name": "Open Source",
-    "description": "best free open source tools for your next projects",
-    "icon": "🔨"
-  },
-  {
-    "slug": "productivity",
-    "name": "Productivity",
-    "description": "best free productivity tools",
-    "icon": "⌚"
-  }
-]
+{ "categories": [
+    {
+      "slug": "open-source",
+      "name": "Open Source",
+      "description": "best free open source tools for your next projects",
+      "icon": "🔨"
+    },
+    {
+      "slug": "productivity",
+      "name": "Productivity",
+      "description": "best free productivity tools",
+      "icon": "⌚"
+    }
+  ]
+}
