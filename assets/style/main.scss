@@ -2,6 +2,10 @@
 @import "variables";
 @import "mixins";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $primary-font-family;
   color: $text-color;
@@ -21,8 +25,6 @@ h6 {
   /* stylelint-disable */
   @include container($container-padding);
   /* stylelint-enable */
-
-  box-sizing: border-box;
 }
 
 .section-title {

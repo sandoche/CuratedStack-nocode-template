@@ -83,9 +83,7 @@ export default {
         }
         
         i++
-        console.log(document)
         nuxt.callHook('lunr:document', document)
-        
       }
     }
   },

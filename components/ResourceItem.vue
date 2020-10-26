@@ -90,7 +90,6 @@ export default {
   background-color: $light-grey-color;
   border-radius: 3px;
   padding: 16px;
-  box-sizing: border-box;
 
   @media (max-width: 720px) {
     height: 32px;

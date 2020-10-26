@@ -81,6 +81,5 @@ export default {
   border: 1px solid $medium-grey-color;
   box-shadow: 0 4px 24px rgba(32, 43, 54, 0.08);
   border-radius: 3px;
-  box-sizing: border-box;
 }
 </style>

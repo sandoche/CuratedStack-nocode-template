@@ -1,7 +1,9 @@
 <template>
   <div>
     <TheHeader :title="title" :description="description" />
-    <TheSearch />
+    <div class="container">
+      <TheSearch />
+    </div>
     <section class="tools">
       <div class="container">
         <h2 class="section-title">

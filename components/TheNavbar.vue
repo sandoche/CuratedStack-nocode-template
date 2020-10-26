@@ -61,7 +61,6 @@ export default {
   top: 0;
   background-color: #fff;
   left: 0;
-  box-sizing: border-box;
   z-index: 100;
   font-family: $secondary-font-family;
   display: grid;
@@ -105,8 +104,6 @@ export default {
   padding: 0 16px;
   overflow-x: scroll;
   white-space: nowrap;
-  box-sizing: border-box;
-
   &::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
     background-color: #fff;
