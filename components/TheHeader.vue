@@ -1,7 +1,7 @@
 <template>
   <header class="header container">
     <nuxt-link to="/">
-      <img v-if="!icon" src="/icon.png" alt="Logo" class="logo" />
+      <img v-if="!icon" :src="iconSrc" alt="Logo" class="logo" />
     </nuxt-link>
     <p v-if="icon" class="icon">
       {{ icon }}
@@ -16,6 +16,8 @@
 </template>
 
 <script>
+import getConfig from '~/services/getConfig'
+
 export default {
   name: 'TheHeader',
   props: {
@@ -36,6 +38,12 @@ export default {
       type: Number,
       required: false,
       default: null
+    }
+  },
+  data() {
+    const config = getConfig()
+    return {
+      iconSrc: config.icon
     }
   }
 }
