@@ -17,6 +17,16 @@
       "description": "Add a dark-mode / night-mode to your website in a few seconds",
       "url": "https://darkmodejs.learn.uno/",
       "icon": "/images/logos/darkmode.png"
+    },
+    {
+      "categories_slugs": [
+        "design",
+        "productivity"
+      ],
+      "name": "Undesign",
+      "description": "Collection of free design tools and resources for makers, developers and designers",
+      "url": "https://undesign.learn.uno/",
+      "icon": "/images/logos/icon.png"
     }
   ]
 }
