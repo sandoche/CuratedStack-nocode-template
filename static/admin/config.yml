@@ -103,3 +103,8 @@ collections:
                 widget: object
                 fields:
                   - { label: Contact, name: contact, widget: string }
+          - label: Search bar
+            name: lunr-module
+            widget: object
+            fields:
+              - { label: Placeholder, name: placeholderText, widget: string }

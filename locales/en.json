@@ -22,5 +22,8 @@
     "footer": {
       "contact": "Contact"
     }
+  },
+  "lunr-module": {
+    "placeholderText": "Search..."
   }
 }
