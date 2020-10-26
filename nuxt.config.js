@@ -60,7 +60,9 @@ export default {
         fields: ['name', 'description', 'tags'],
         css: true
       }
-    }
+    },
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
 
   hooks: {
@@ -105,7 +107,11 @@ export default {
   // https://google-analytics.nuxtjs.org
   googleAnalytics: {
     id: config.google_analytics
-  }
+  },
+
+  sitemap: {
+    hostname: config.hostname
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {}

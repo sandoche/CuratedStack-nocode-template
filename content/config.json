@@ -2,5 +2,6 @@
   "title": "CuratedStack (No-Code) Template",
   "description": "Collection of free design tools and resources for makers, developers and designers",
   "contact_link": "https://www.sandoche.com/?contact",
-  "google_analytics": "UA-XXX-X"
+  "google_analytics": "UA-XXX-X",
+  "hostname": "https://curatedstacktemplate.learn.uno"
 }

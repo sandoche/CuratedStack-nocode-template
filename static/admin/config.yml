@@ -56,6 +56,7 @@ collections:
           - { label: Description, name: description, widget: text }
           - { label: Url, name: contact_link, widget: string }
           - { label: Google analytics tracking code, name: google_analytics, widget: string }
+          - { label: Hostname, name: hostname, widget: string }
   - label: "Strings"
     name: "strings"
     extension: "json"
