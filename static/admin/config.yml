@@ -58,6 +58,7 @@ collections:
           - { label: Url, name: contact_link, widget: string }
           - { label: Google analytics tracking code, name: google_analytics, widget: string }
           - { label: Hostname, name: hostname, widget: string }
+          - { label: Icon, name: icon, widget: image }
   - label: "Strings"
     name: "strings"
     extension: "json"

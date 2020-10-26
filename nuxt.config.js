@@ -17,7 +17,7 @@ export default {
       { hid: 'description', name: 'description', content: config.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: config.icon },
       {
         rel: 'stylesheet',
         href:
@@ -127,7 +127,7 @@ export default {
   // https://go.nuxtjs.dev/pwa
   pwa: {
     icon: {
-      fileName: 'icon.png'
+      source: config.icon
     },
     meta: {
       name: false,
