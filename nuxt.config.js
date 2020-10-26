@@ -32,6 +32,17 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [{ src: '~/assets/style/main.scss', lang: 'scss' }],
 
+  postcss: {
+    plugins: {
+      'postcss-preset-env': this.preset,
+      cssnano: { preset: 'default' } // disabled in dev mode
+    },
+    order: 'presetEnvAndCssnanoLast',
+    preset: {
+      stage: 2
+    }
+  },
+
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
 
