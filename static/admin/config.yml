@@ -13,7 +13,7 @@ collections:
     files:
       - label: "Categories"
         name: "categories"
-        file: "data/categories.json"
+        file: "content/categories.json"
         fields:
           - label: "Categories"
             name: "categories"
@@ -29,7 +29,7 @@ collections:
     files:
       - label: "Links"
         name: "links"
-        file: "data/links.json"
+        file: "content/links.json"
         fields:
           - label: "Links"
             name: "links"
@@ -50,7 +50,7 @@ collections:
     files:
       - label: "Config"
         name: "config"
-        file: "data/config.json"
+        file: "content/config.json"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: text }
