@@ -5,11 +5,9 @@
         ← {{ $t('buttons.navigation.back') }}
       </nuxt-link>
       <nuxt-link to="/" class="logo topbar__col">
-        <img v-if="!icon" src="/icon.png" alt="Logo" class="logo" />
+        <img :src="icon" alt="Logo" class="logo" />
       </nuxt-link>
-      <a class="contact-button" :href="contactLink" target="_blank">{{
-        $t('buttons.navigation.contact')
-      }}</a>
+      <TheSearch />
     </div>
     <div class="categorybar">
       <nuxt-link
@@ -28,10 +26,14 @@
 </template>
 
 <script>
+import TheSearch from '~/components/TheSearch.vue'
 import getConfig from '~/services/getConfig'
 
 export default {
   name: 'TheNavbar',
+  components: {
+    TheSearch
+  },
   props: {
     categories: {
       type: Array,
@@ -43,8 +45,10 @@ export default {
     }
   },
   data() {
+    const config = getConfig()
     return {
-      contactLink: getConfig().contact_link
+      contactLink: config.contact_link,
+      icon: config.icon
     }
   }
 }

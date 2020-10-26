@@ -16,8 +16,7 @@
   },
   "buttons": {
     "navigation": {
-      "back": "Back",
-      "contact": "Contact"
+      "back": "Back"
     },
     "footer": {
       "contact": "Contact"

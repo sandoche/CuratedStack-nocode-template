@@ -97,7 +97,6 @@ collections:
                 widget: object
                 fields:
                   - { label: Back, name: back, widget: string }
-                  - { label: Contact, name: contact, widget: string }
               - label: Footer
                 name: footer
                 widget: object

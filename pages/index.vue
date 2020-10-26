@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader :title="title" :description="description" />
-    <div class="container">
+    <div class="container home-search">
       <TheSearch />
     </div>
     <section class="tools">
@@ -61,6 +61,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/style/variables';
+
+.home-search {
+  margin-top: -32px;
+  margin-bottom: 32px;
+}
 
 .tools {
   background-color: $light-grey-color;

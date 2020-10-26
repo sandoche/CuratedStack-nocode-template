@@ -56,9 +56,6 @@ export default {
 .lunr-search {
   width: 100%;
   max-width: 400px;
-  margin: auto;
-  margin-bottom: 64px;
-  margin-top: -32px;
 
   input {
     width: 100%;
