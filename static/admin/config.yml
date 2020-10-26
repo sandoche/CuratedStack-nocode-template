@@ -55,3 +55,47 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: text }
           - { label: Url, name: contact_link, widget: string }
+  - label: "Strings"
+    name: "strings"
+    extension: "json"
+    files:
+      - label: "English"
+        name: "english"
+        file: "locales/en.json"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
+          - label: Tools section
+            name: tools
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+          - label: Footer section
+            name: footer
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Copyright, name: copyright, widget: string }
+              - label: Author
+                name: author
+                widget: object
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Website, name: website, widget: string }
+          - label: Buttons
+            name: buttons
+            widget: object
+            fields:
+              - label: Navigation
+                name: navigation
+                widget: object
+                fields:
+                  - { label: Back, name: back, widget: string }
+                  - { label: Contact, name: contact, widget: string }
+              - label: Footer
+                name: footer
+                widget: object
+                fields:
+                  - { label: Contact, name: contact, widget: string }
