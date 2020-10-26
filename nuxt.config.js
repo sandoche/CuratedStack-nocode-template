@@ -127,7 +127,7 @@ export default {
   // https://go.nuxtjs.dev/pwa
   pwa: {
     icon: {
-      source: config.icon
+      fileName: config.icon.charAt(0) === '/' ? config.icon.substring(1) : config.icon
     },
     meta: {
       name: false,
