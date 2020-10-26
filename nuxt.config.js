@@ -73,7 +73,7 @@ export default {
             id: String(i),
             name: link.name,
             description: link.description,
-            tags: link.categories_slugs.join(',')
+            tags: link.categories_slugs.join(' ')
           },
           meta: {
             name: link.name,

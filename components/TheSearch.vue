@@ -2,7 +2,7 @@
   <div class="the-search">
     <lunr-search lang="en">
       <template v-slot:default="{ meta }">
-        <a :href="meta.url">
+        <a :href="meta.url" @click="openLink(meta.url)">
           <div class="the-search__result">
             <img :src="meta.icon" :alt="meta.name" />
             <span>{{ meta.name }}</span>
@@ -17,6 +17,11 @@
 export default {
   components: {
     LunrSearch: () => import('lunr-module/search')
+  },
+  methods: {
+    openLink(link) {
+      window.location.href = link
+    }
   }
 }
 </script>
@@ -61,10 +66,24 @@ export default {
 }
 
 .lunr-results {
-  width: 100%;
+  width: 100% !important;
 }
 
 .lunr-status {
   font-size: 14px;
+  width: 100% !important;
+}
+
+.lunr-result {
+  cursor: pointer;
+  padding: 4px 0;
+  display: none;
+  &:first-of-type,
+  &:nth-of-type(2),
+  &:nth-of-type(3),
+  &:nth-of-type(4),
+  &:nth-of-type(5) {
+    display: block;
+  }
 }
 </style>
