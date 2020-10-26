@@ -53,6 +53,7 @@ collections:
         file: "content/config.json"
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Short name, name: shortname, widget: string }
           - { label: Description, name: description, widget: text }
           - { label: Url, name: contact_link, widget: string }
           - { label: Google analytics tracking code, name: google_analytics, widget: string }

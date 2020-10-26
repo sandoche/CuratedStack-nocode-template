@@ -124,6 +124,25 @@ export default {
     hostname: config.hostname
   },
 
+  // https://go.nuxtjs.dev/pwa
+  pwa: {
+    icon: {
+      fileName: 'icon.png'
+    },
+    meta: {
+      name: false,
+      description: false,
+      theme_color: '#908f9e',
+      lang: 'en'
+    },
+    manifest: {
+      name: config.title,
+      short_name: config.shortname,
+      description: config.description,
+      background_color: '#908f9e'
+    }
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {}
 }
