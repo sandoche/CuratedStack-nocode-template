@@ -73,7 +73,8 @@ export default {
       }
     },
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    'nuxtjs-darkmode-js-module'
   ],
 
   hooks: {

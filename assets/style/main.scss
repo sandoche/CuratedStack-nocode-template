@@ -80,3 +80,18 @@ h6 {
 a {
   color: $primary-color;
 }
+
+.darkmode-layer,
+.darkmode-toggle {
+  z-index: 500;
+}
+
+.darkmode--activated {
+  .icon,
+  .logo,
+  h1,
+  h2 {
+    position: relative;
+    z-index: 501;
+  }
+}
