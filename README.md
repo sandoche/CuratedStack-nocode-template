@@ -51,28 +51,28 @@ Todo
 - NodeJS
 
 ### Install
-```
+```sh
 npm install
 ```
 
 ### Development
-```
+```sh
 npm run dev
 ```
 
 ### Build
-```
+```sh
 npm run generate
 ```
 
 ### Analyze links & categories
-```
+```sh
 # To check how many links you have in each category and if there are links in double
 npm run analyze
 ```
 
 ### Downloads logos
-```
+```sh
 npm run get-logos
 ```
 
