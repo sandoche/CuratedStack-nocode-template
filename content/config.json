@@ -7,14 +7,14 @@
   "hostname": "https://curatedstacktemplate.learn.uno/",
   "icon": "/images/logos/icon.png",
   "floatingPrompt": {
-    "disabled": false,
-    "name":"CuratedStack Nocode Template",
-    "url":"https://www.producthunt.com/posts/curatedstack-nocode-template",
-    "text":"Hi, do you like CuratedStack Nocode Template ? Don't forget to show your love on Product Hunt 🚀",
-    "buttonText":"CuratedStack Template on Product Hunt",
-    "width":"500px",
-    "bottom":"32px",
-    "right":"unset",
-    "left":"32px"
+    "width": "500px",
+    "left": "32px",
+    "bottom": "32px",
+    "name": "CuratedStack Nocode Template",
+    "text": "Hi, do you like CuratedStack Nocode Template ? Don't forget to show your love on Product Hunt 🚀",
+    "url": "https://www.producthunt.com/posts/curatedstack-nocode-template",
+    "right": "unset",
+    "disabled": true,
+    "buttonText": "CuratedStack Template on Product Hunt"
   }
 }
