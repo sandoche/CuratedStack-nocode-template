@@ -14,7 +14,7 @@
     "text": "Hi, do you like CuratedStack Nocode Template ? Don't forget to show your love on Product Hunt 🚀",
     "url": "https://www.producthunt.com/posts/curatedstack-nocode-template",
     "right": "unset",
-    "disabled": true,
+    "disabled": false,
     "buttonText": "CuratedStack Template on Product Hunt"
   }
 }
