@@ -25,7 +25,7 @@ CuratedStack Nocode Template comes with pre-installed features and options:
 ## ✨ Demo
 Check out websites using the CuratedStack Nocode Template:
 - https://undesign.learn.uno
-- https://curatedstack.learn.uno (demo website)
+- https://curatedstacktemplate.learn.uno/ (demo website)
 
 ## 📖 How to use
 
