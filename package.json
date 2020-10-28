@@ -30,6 +30,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
+    "nuxt-floating-prompt-module": "^1.0.0",
     "nuxt-i18n": "^6.15.4",
     "nuxtjs-darkmode-js-module": "^1.0.0"
   },

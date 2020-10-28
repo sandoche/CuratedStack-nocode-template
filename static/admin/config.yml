@@ -59,6 +59,19 @@ collections:
           - { label: Google analytics tracking code, name: google_analytics, widget: string }
           - { label: Hostname, name: hostname, widget: string }
           - { label: Icon, name: icon, widget: image }
+          - label: Floating Prompt
+            name: floatingPrompt
+            widget: object
+            fields:
+              - { label: Disable Widget, name: "disabled", widget: "boolean", default: false}
+              - { label: Name, name: name, widget: string }
+              - { label: Url, name: url, widget: string }
+              - { label: Text, name: text, widget: string }
+              - { label: "Button's text", name: buttonText, widget: string }
+              - { label: Width, name: width, widget: string }
+              - { label: Bottom, name: bottom, widget: string }
+              - { label: Right, name: right, widget: string }
+              - { label: Left, name: left, widget: string }
   - label: "Strings"
     name: "strings"
     extension: "json"

@@ -74,7 +74,8 @@ export default {
     },
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    'nuxtjs-darkmode-js-module'
+    'nuxtjs-darkmode-js-module',
+    'nuxt-floating-prompt-module'
   ],
 
   hooks: {
@@ -97,7 +98,7 @@ export default {
             icon: link.icon
           }
         }
-        
+
         i++
         nuxt.callHook('lunr:document', document)
       }
@@ -128,7 +129,8 @@ export default {
   // https://go.nuxtjs.dev/pwa
   pwa: {
     icon: {
-      fileName: config.icon.charAt(0) === '/' ? config.icon.substring(1) : config.icon
+      fileName:
+        config.icon.charAt(0) === '/' ? config.icon.substring(1) : config.icon
     },
     meta: {
       name: false,
@@ -143,6 +145,8 @@ export default {
       background_color: '#908f9e'
     }
   },
+
+  floatingPrompt: config.floatingPrompt.disabled ? false : config.floatingPrompt,
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {}

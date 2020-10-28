@@ -18,6 +18,7 @@ CuratedStack Nocode Template comes with pre-installed features and options:
 - No-code friendly using Netlify CMS (check the below tutorial)
 - Search bar and index generated automatically (using Lunr.js)
 - Automatic dark theme
+- Floating Prompt (for Product Hunt or anything else)
 - Google Analytics
 - Script to analyze your links & categories
 - Script to download websites logos automatically
