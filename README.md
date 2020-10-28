@@ -40,13 +40,21 @@ Take advantage of Netlify CMS for hosting and updating your website without code
 Nevertheless a few options needs to be activated in order to get started, just follow the instructions below.
 
 1. Add your project in Netlify using this button (and follow the steps): [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sandoche/CuratedStack-nocode-template)
+
    1.1. Once done you will see the link to your website, you can later on customize your website name or even add your own domain name.
+
 2. Enable Identity and Git Gateway by following these instructions (full instructions here: https://www.netlifycms.org/docs/add-to-your-site/#enable-identity-and-git-gateway)
+
    2.1. Go to Netlify and go to your brand new deployed website, then **Settings > Identity**, and select **Enable Identity service**.
+
    2.2. Under **Registration preferences**, select **Invite only**.
+
    2.3. Click on **Invite users** and add your email, press **Send** you will receive a link by email to create an account.
+
 3. Go to **Services > Git Gateway**, and click **Enable Git Gateway**. This authenticates with your Git host and generates an API access token. In this case, we're leaving the Roles field blank, which means any logged in user may access the CMS.
-4. Go to your website name and add `/admin` at the end of the url, you will be redirected to the admin panel where you need to login with your email and password defined at step 2.3.
+
+4. Go to your website name and add `/admin` at the end of the url, you will be redirected to the admin panel where you need to login with your email and password defined at step 
+
 5. From this admin panel you will be able to change anything, name, description, logos, websites, categories, and you will have to click on "Publish" once done and wait a few minutes before it is updated!
 
 ### The coders way
