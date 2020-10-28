@@ -4,6 +4,17 @@
   "description": "Collection of free design tools and resources for makers, developers and designers",
   "contact_link": "https://www.sandoche.com/?contact",
   "google_analytics": "UA-XXX-X",
-  "hostname": "https://curatedstacktemplate.learn.uno",
-  "icon": "/images/logos/icon.png"
+  "hostname": "https://curatedstacktemplate.learn.uno/",
+  "icon": "/images/logos/icon.png",
+  "floatingPrompt": {
+    "disabled": false,
+    "name":"CuratedStack Nocode Template",
+    "url":"https://www.producthunt.com/posts/curatedstack-nocode-template",
+    "text":"Hi, do you like CuratedStack Nocode Template ? Don't forget to show your love on Product Hunt 🚀",
+    "buttonText":"CuratedStack Template on Product Hunt",
+    "width":"500px",
+    "bottom":"32px",
+    "right":"unset",
+    "left":"32px"
+  }
 }
