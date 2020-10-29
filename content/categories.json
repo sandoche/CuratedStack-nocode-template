@@ -13,10 +13,64 @@
       "icon": "⌚"
     },
     {
+      "slug": "communication",
+      "name": "Communication",
+      "description": "best communication tools",
+      "icon": "💬"
+    },
+    {
+      "slug": "finance",
+      "name": "Finance",
+      "description": "best finance tools",
+      "icon": "💰"
+    },
+    {
+      "slug": "cryptocurrency",
+      "name": "Cryptocurrency",
+      "description": "best cryptocurrency tools",
+      "icon": "₿"
+    },
+    {
+      "slug": "trends",
+      "name": "Trends",
+      "description": "best trends tools",
+      "icon": "📈"
+    },
+    {
+      "slug": "ideas",
+      "name": "Ideas",
+      "description": "best idea generation tools",
+      "icon": "💡"
+    },
+    {
       "slug": "design",
       "name": "Design",
       "description": "best designs tools",
       "icon": "🎨"
+    },
+    {
+      "slug": "well-being",
+      "name": "Well-being",
+      "description": "best well-being tools",
+      "icon": "🍀"
+    },
+    {
+      "slug": "books",
+      "name": "Books",
+      "description": "best books",
+      "icon": "📚"
+    },
+    {
+      "slug": "food",
+      "name": "Food",
+      "description": "best resources for food lovers",
+      "icon": "🥑"
+    },
+    {
+      "slug": "learning",
+      "name": "Learning",
+      "description": "best learning tools",
+      "icon": "🎓"
     }
   ]
 }
