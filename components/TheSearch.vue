@@ -86,7 +86,7 @@ export default {
 
 .lunr-results {
   width: 100% !important;
-  z-index: 100;
+  z-index: 600;
   box-shadow: 0 4px 24px rgba(32, 43, 54, 0.08);
 }
 
