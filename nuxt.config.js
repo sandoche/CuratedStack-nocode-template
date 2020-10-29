@@ -79,7 +79,7 @@ export default {
   ],
 
   hooks: {
-    async ready(nuxt) {
+    ready(nuxt) {
       const links = getLinks()
       let i = 0
 
