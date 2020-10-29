@@ -13,10 +13,10 @@
       "icon": "⌚"
     },
     {
-      "slug": "design",
-      "name": "Design",
-      "description": "best designs tools",
-      "icon": "🎨"
+      "slug": "communication",
+      "name": "Communication",
+      "description": "best communication tools",
+      "icon": "💬"
     },
     {
       "slug": "finance",
@@ -25,10 +25,10 @@
       "icon": "💰"
     },
     {
-      "slug": "ideas",
-      "name": "Ideas",
-      "description": "best idea generation tools",
-      "icon": "💡"
+      "slug": "cryptocurrency",
+      "name": "Cryptocurrency",
+      "description": "best cryptocurrency tools",
+      "icon": "₿"
     },
     {
       "slug": "trends",
@@ -37,10 +37,16 @@
       "icon": "📈"
     },
     {
-      "slug": "communication",
-      "name": "Communication",
-      "description": "best communication tools",
-      "icon": "💬"
+      "slug": "ideas",
+      "name": "Ideas",
+      "description": "best idea generation tools",
+      "icon": "💡"
+    },
+    {
+      "slug": "design",
+      "name": "Design",
+      "description": "best designs tools",
+      "icon": "🎨"
     },
     {
       "slug": "well-being",
@@ -65,12 +71,6 @@
       "name": "Learning",
       "description": "best learning tools",
       "icon": "🎓"
-    },
-    {
-      "slug": "cryptocurrency",
-      "name": "Cryptocurrency",
-      "description": "best cryptocurrency tools",
-      "icon": "₿"
     }
   ]
 }

@@ -8,12 +8,12 @@
   "icon": "/images/logos/icon.png",
   "floatingPrompt": {
     "width": "500px",
-    "left": "32px",
-    "bottom": "32px",
+    "left": "unset",
+    "bottom": "112px",
     "name": "CuratedStack Nocode Template",
     "text": "Hi, do you like CuratedStack Nocode Template ? Don't forget to show your love on Product Hunt 🚀",
     "url": "https://www.producthunt.com/posts/curatedstack-nocode-template",
-    "right": "unset",
+    "right": "32px",
     "disabled": false,
     "buttonText": "CuratedStack Template on Product Hunt"
   }
