@@ -1,6 +1,13 @@
 {
   "links": [
     {
+      "categories_slugs": [],
+      "name": "CuratedStack (No-Code) Template",
+      "description": "Create for free your own curated collection of websites for free",
+      "url": "https://github.com/sandoche/CuratedStack-nocode-template",
+      "icon": "/images/logos/icon.png"
+    },
+    {
       "categories_slugs": [
         "productivity"
       ],
@@ -20,13 +27,182 @@
     },
     {
       "categories_slugs": [
-        "design",
-        "productivity"
+        "design"
       ],
       "name": "Undesign",
       "description": "Collection of free design tools and resources for makers, developers and designers",
       "url": "https://undesign.learn.uno/",
       "icon": "/images/logos/undesign.png"
+    },
+    {
+      "categories_slugs": [
+        "open-source"
+      ],
+      "name": "Mobile App Landing Page Template",
+      "description": "📱 Free to use static generated landing page template for your mobile app",
+      "url": "https://github.com/sandoche/Mobile-app-landingpage-template",
+      "icon": "/images/logos/mobile-app.png"
+    },
+    {
+      "categories_slugs": [
+        "finance"
+      ],
+      "name": "Revenual",
+      "description": "Aggregated sales reports for app makers",
+      "url": "https://www.revenual.com/",
+      "icon": "/images/logos/revenual.png"
+    },
+    {
+      "categories_slugs": [
+        "open-source"
+      ],
+      "name": "Software Donation",
+      "description": "Transforming lives through access to powerful software",
+      "url": "https://softwaredonation.org/",
+      "icon": "/images/logos/software-donation.png"
+    },
+    {
+      "categories_slugs": [
+        "ideas",
+        "open-source",
+        "trends"
+      ],
+      "name": "Infinideas",
+      "description": "Infinite feed of crowdsourced ideas from Reddit and Twitter",
+      "url": "https://infinideas.learn.uno/",
+      "icon": "/images/logos/infinideas.png"
+    },
+    {
+      "categories_slugs": [
+        "open-source"
+      ],
+      "name": "NamingConvention",
+      "description": "Encyclopedia of naming conventions",
+      "url": "https://namingconvention.org/",
+      "icon": "/images/logos/naming-convention.png"
+    },
+    {
+      "categories_slugs": [
+        "communication"
+      ],
+      "name": "WhatsBlast",
+      "description": "Send personalized mass WhatsApp messages",
+      "url": "https://whatsblast.learn.uno/",
+      "icon": "/images/logos/whatsblast.png"
+    },
+    {
+      "categories_slugs": [
+        "well-being"
+      ],
+      "name": "Detoxify",
+      "description": "Generate a fake app to replace any addictive app 📱🙅",
+      "url": "https://detoxify.app/",
+      "icon": "/images/logos/detoxify.png"
+    },
+    {
+      "categories_slugs": [
+        "books",
+        "food"
+      ],
+      "name": "Tradivegan",
+      "description": "Traditional authentic vegan recipes from all around the world",
+      "url": "https://tradivegan.com/",
+      "icon": "/images/logos/tradivegan.png"
+    },
+    {
+      "categories_slugs": [
+        "trends"
+      ],
+      "name": "GitNews Web",
+      "description": "Trending repositories from GitHub, HackerNews & Reddit (Browser)",
+      "url": "https://git.news/",
+      "icon": "/images/logos/gitnews.png"
+    },
+    {
+      "categories_slugs": [
+        "trends"
+      ],
+      "name": "GitNews Mobile",
+      "description": "Trending repositories from GitHub, HackerNews & Reddit (Android & iOS)",
+      "url": "https://gitnews.learn.uno/",
+      "icon": "/images/logos/gitnews.png"
+    },
+    {
+      "categories_slugs": [
+        "communication"
+      ],
+      "name": "Textblast",
+      "description": "Send personalized mass messages easily",
+      "url": "https://textblast.learn.uno/",
+      "icon": "/images/logos/textblast.png"
+    },
+    {
+      "categories_slugs": [
+        "food"
+      ],
+      "name": "What to Eat in",
+      "description": "Discover what locals eat all around the world",
+      "url": "https://what.toeat.in/",
+      "icon": "/images/logos/wtei.png"
+    },
+    {
+      "categories_slugs": [
+        "learning"
+      ],
+      "name": "Learning Lab",
+      "description": "Learn anything in one month alongside your day job",
+      "url": "https://learn.uno/",
+      "icon": "/images/logos/learninglab.png"
+    },
+    {
+      "categories_slugs": [
+        "cryptocurrency",
+        "open-source"
+      ],
+      "name": "CoinGenerator",
+      "description": "Build an energy efficient PoS cryptocurrency with its own blockchain in a few minutes",
+      "url": "https://coingenerator.sh/",
+      "icon": "/images/logos/coingenerator.png"
+    },
+    {
+      "categories_slugs": [
+        "cryptocurrency",
+        "open-source"
+      ],
+      "name": "Motive",
+      "description": "Get rewarded by doing your own tasks",
+      "url": "https://motive.network/",
+      "icon": "/images/logos/motive.png"
+    },
+    {
+      "categories_slugs": [
+        "cryptocurrency",
+        "learning",
+        "open-source"
+      ],
+      "name": "NaivecoinStake",
+      "description": "NaivecoinStake is a tutorial to build from scratch a cryptocurrency using the Proof of Stake consensus.",
+      "url": "https://naivecoinstake.learn.uno/",
+      "icon": "/images/logos/naivecoinstake.png"
+    },
+    {
+      "categories_slugs": [
+        "productivity",
+        "open-source"
+      ],
+      "name": "Snoozever",
+      "description": "Get Gmail snoozed emails directly to Evernote",
+      "url": "https://snoozever.kanbanote.com/",
+      "icon": "/images/logos/snoozever.png"
+    },
+    {
+      "categories_slugs": [
+        "open-source"
+      ],
+      "name": "Jekyll-webpack-boilerplate",
+      "description": "A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps)",
+      "url": "https://github.com/sandoche/Jekyll-webpack-boilerplate",
+      "icon": "/images/logos/jekyll.png"
     }
   ]
 }

@@ -61,12 +61,12 @@ Nevertheless a few options needs to be activated in order to get started, just f
 
 1. Fork this project
 2. Edit `content/config.json`
-3. Add your categories in `content/categories.json`
-4. Add your links in `content/links.json`
+3. Add your categories in `content/categories.json` (after deleting the demo categories)
+4. Add your links in `content/links.json` (after deleting the demo links)
 5. Edit your strings in `locales/en.json` (optional)
 6. Change your icon in `static/images/logos/icon.png`
-7. Use `npm run analyze` to check analyze your links and `npm run get-logos` to try to download logos of websites
-8. Generate with `npm run generate` and
+7. Use `npm run analyze` to check analyze your links and `npm run get-logos` to try to download logos of websites (do not forget to remove the `static/images/logos` demo content)
+8. Generate with `npm run generate`
 9. Deploy the generated files from the `dist` folder (on netlify, gitpages or surge, they are all free)
 
 ## ⚙️ How to run
