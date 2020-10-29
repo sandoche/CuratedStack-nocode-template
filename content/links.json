@@ -102,7 +102,8 @@
     {
       "categories_slugs": [
         "books",
-        "food"
+        "food",
+        "well-being"
       ],
       "name": "Tradivegan",
       "description": "Traditional authentic vegan recipes from all around the world",
@@ -203,6 +204,13 @@
       "description": "A Jekyll boilerplate supercharged with Webpack to build modern performant websites (including Progressive Web Apps)",
       "url": "https://github.com/sandoche/Jekyll-webpack-boilerplate",
       "icon": "/images/logos/jekyll.png"
+    },
+    {
+      "categories_slugs": [],
+      "name": "CuratedStack (No-Code) Template",
+      "description": "Get started with the CuratedStack (No-Code) Template",
+      "url": "https://github.com/sandoche/CuratedStack-nocode-template",
+      "icon": "/images/logos/icon.png"
     }
   ]
 }
