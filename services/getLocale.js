@@ -1,4 +1,4 @@
-export function getLocale(lang) {
+const getLocale = (lang) => {
   const locale = require('../locales/' + lang + '.json')
   return locale
 }
