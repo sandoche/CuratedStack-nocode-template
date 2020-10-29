@@ -4,7 +4,10 @@
       <template v-slot:default="{ meta }">
         <a :href="meta.url" @click="openLink(meta.url)">
           <div class="the-search__result">
-            <img :src="meta.icon" :alt="meta.name" />
+            <img v-if="meta.icon" :src="meta.icon" :alt="meta.name" />
+            <div v-else class="icon--placeholder">
+              {{ meta.name | firstLetter }}
+            </div>
             <span>{{ meta.name }}</span>
           </div>
         </a>
@@ -18,6 +21,13 @@ export default {
   components: {
     LunrSearch: () => import('lunr-module/search')
   },
+  filters: {
+    firstLetter(value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.charAt(0)
+    }
+  },
   methods: {
     openLink(link) {
       window.location.href = link
@@ -27,6 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/variables';
+
 .the-search {
   display: flex;
   justify-content: center;
@@ -50,6 +62,16 @@ export default {
     }
   }
 }
+
+.icon {
+  &--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grey-color;
+    font-weight: 900;
+  }
+}
 </style>
 
 <style lang="scss">
@@ -64,6 +86,8 @@ export default {
 
 .lunr-results {
   width: 100% !important;
+  z-index: 100;
+  box-shadow: 0 4px 24px rgba(32, 43, 54, 0.08);
 }
 
 .lunr-status {

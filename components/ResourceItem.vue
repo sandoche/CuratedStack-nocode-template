@@ -1,7 +1,7 @@
 <template>
   <a :href="url" target="_blank" class="resource-item">
     <img v-if="icon" :src="icon" alt="" class="icon" />
-    <div v-if="!icon" class="icon icon--placeholder">
+    <div v-else class="icon icon--placeholder">
       {{ name | firstLetter }}
     </div>
     <div class="text">
