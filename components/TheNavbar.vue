@@ -19,7 +19,8 @@
           'category-button--active': category.slug === slug
         }"
       >
-        {{ category.name }} {{ category.icon }}
+        {{ category.name }}
+        <span class="emoji">{{ category.icon }}</span>
       </nuxt-link>
     </div>
   </nav>

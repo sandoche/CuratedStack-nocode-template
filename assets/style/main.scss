@@ -81,6 +81,10 @@ a {
   color: $primary-color;
 }
 
+.producthunt {
+  z-index: 600px;
+}
+
 .darkmode-layer,
 .darkmode-toggle {
   z-index: 500;
@@ -92,7 +96,8 @@ a {
   h1,
   h2,
   .button,
-  .resource-item, {
+  .resource-item,
+  .emoji {
     position: relative;
     z-index: 501;
     mix-blend-mode: difference;
@@ -128,5 +133,11 @@ a {
     a {
       mix-blend-mode: difference;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .producthunt {
+    min-width: 100% !important;
   }
 }
