@@ -21,6 +21,7 @@ CuratedStack Nocode Template comes with pre-installed features and options:
 - 🌓 Automatic dark theme
 - 🚀 Floating Prompt (for Product Hunt or anything else)
 - 📈 Google Analytics
+- 📱 Installable as a Progressive Web App
 - 📊 Script to analyze your links & categories
 - 💠 Script to download websites logos automatically
 
