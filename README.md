@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/static/images/logos/icon.png" width="150">
+  <img src="/curatedstack.gif" width="175">
 </p>
 <h1 align="center">CuratedStack Nocode Template</h1>
 <p>
