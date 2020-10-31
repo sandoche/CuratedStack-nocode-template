@@ -11,16 +11,18 @@ https://curatedstacktemplate.learn.uno/
 * Open Source, Github, Tech, Developer tools
 * A simple to use template to build a curated directory of websites without or with code
 <br>⚙️ Change the name / icon / description / google analytics code (using the admin panel or your text editor)
-<br>💠 Add your categories, and your links (using the admin panel or your text editor)
+<br>📚 Add your categories, and your links (using the admin panel or your text editor)
 <br>🚀 Deploy for free on Netlify (or Surge, or GitPages)
 
 
 ## 3. First comment
 Hello people 👋!
 
-Curated directory are very popular on Product Hunt, it started with the lengendary Startup Stash, followed by Marketing Stack and hundred of others. 
+Curated directory are very popular on Product Hunt, it started with the lengendary Startup Stash, followed by Marketing Stack and hundred of others. I myself built 3 curated directory of resources, and my last one <a href="https://undesign.learn.uno">Undesign</a> is very useful (I use it almost everyday) and got pretty popular. 
 
-I myself built 3 curated directory of resources, and my last one <a href="https://undesign.learn.uno">Undesign</a> is very useful (I use it almost everyday) and got pretty popular. Many people contact me every week to add new resources or just to talk and a few people asked me how to build a clone of it, some of them without coding knowledge. Therefore I decided to turn it to a <strong>easy to use template for coders</strong>, and go further by making <strong>it usable without a single line of code using Netlify CMS that provides an admin panel to add / edit the content of the website</strong>. Because this templates generates static page it can be hosted for free!
+Some people asked me how to build a clone of <a href="https://undesign.learn.uno">Undesign</a>, some of them without coding knowledge. Therefore I decided to turn it to a <strong>easy to use template for coders</strong>, and go further by making <strong>it usable without a single line of code using Netlify CMS that provides an admin panel to add / edit the content of the website</strong>. 
+
+<strong>CuratedStack is made for no-coders and coders, it's open source and it's free 🙌</strong>
 
 <strong>Why would I need to build a curated directory?</strong>
 - To build the next best Product Hunt project
@@ -30,14 +32,15 @@ I myself built 3 curated directory of resources, and my last one <a href="https:
 - To make the world a better place
 
 <strong>Last but not least this templates comes with some out of the box features:</strong>
-- No-code friendly using Netlify CMS
-- Admin panel with Netlify CMS
-- Search bar
-- Automatic dark theme
-- Floating Prompt (for Product Hunt or anything else)
-- Google Analytics
-- Script to analyze your links & categories
-- Script to download websites logos automatically
+- 🙅🏻 No-code friendly using Netlify CMS
+- 🦸 Admin panel with Netlify CMS
+- 🔎 Search bar
+- 🌓 Automatic dark theme
+- 🚀 Floating Prompt (for Product Hunt or anything else)
+- 📈 Google Analytics
+- 📊 Script to analyze your links & categories
+- 💠 Script to download websites logos automatically
+- ✨ Static generated (free to host)
 
 Check out the demo here:
 https://curatedstacktemplate.learn.uno/
