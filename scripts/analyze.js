@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { getLinks } from '../services/getLinks.js'
 
 const analyze = function (links) {

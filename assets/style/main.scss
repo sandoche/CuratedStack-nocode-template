@@ -134,6 +134,17 @@ a {
       mix-blend-mode: difference;
     }
   }
+
+  .lunr-results {
+    background: black;
+    border-color: #333;
+  }
+
+  .lunr-result {
+    &:hover {
+      background: #222;
+    }
+  }
 }
 
 @media (max-width: 768px) {

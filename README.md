@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/static/images/logos/icon.png" width="150">
+  <img src="/curatedstack.gif" width="175">
 </p>
 <h1 align="center">CuratedStack Nocode Template</h1>
 <p>
@@ -15,15 +15,15 @@
 ## 💡 Features
 
 CuratedStack Nocode Template comes with pre-installed features and options:
+- 📋 List all your favorite websites by category
+- 🙅🏻 No-code friendly using Netlify CMS (check the below tutorial)
+- 🔎 Search bar and index generated automatically (using Lunr.js)
+- 🌓 Automatic dark theme
+- 🚀 Floating Prompt (for Product Hunt or anything else)
+- 📈 Google Analytics
+- 📊 Script to analyze your links & categories
+- 💠 Script to download websites logos automatically
 
-- List all your favorite websites by category
-- No-code friendly using Netlify CMS (check the below tutorial)
-- Search bar and index generated automatically (using Lunr.js)
-- Automatic dark theme
-- Floating Prompt (for Product Hunt or anything else)
-- Google Analytics
-- Script to analyze your links & categories
-- Script to download websites logos automatically
 
 ## ✨ Demo
 

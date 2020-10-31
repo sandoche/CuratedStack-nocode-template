@@ -79,7 +79,7 @@ export default {
   ],
 
   hooks: {
-    async ready(nuxt) {
+    ready(nuxt) {
       const links = getLinks()
       let i = 0
 
@@ -146,7 +146,9 @@ export default {
     }
   },
 
-  floatingPrompt: config.floatingPrompt.disabled ? false : config.floatingPrompt,
+  floatingPrompt: config.floatingPrompt.disabled
+    ? false
+    : config.floatingPrompt,
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {}

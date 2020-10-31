@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { getLinks } from '../services/getLinks.js'
 import { LogoScrape } from 'logo-scrape';
 import download from 'download'
