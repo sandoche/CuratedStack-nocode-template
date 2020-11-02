@@ -11,6 +11,7 @@
 </p>
 
 📑 Free & open-source template to create a curated directory of websites without (or with) code
+<br><br>
 ![screenshot](/docs/design/screenshots/Product%20Hunt.png)
 ### 👉 [Check the demo website](https://curatedstacktemplate.learn.uno/)
 <br>
