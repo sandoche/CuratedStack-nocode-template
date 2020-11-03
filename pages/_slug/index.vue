@@ -28,6 +28,7 @@ import TheHeader from '~/components/TheHeader.vue'
 import ResourceItem from '~/components/ResourceItem.vue'
 import { getLinks } from '~/services/getLinks'
 import { getCategories, getCategoriesMenu } from '~/services/getCategories'
+import getConfig from '~/services/getConfig'
 
 export default {
   name: 'Category',
@@ -46,8 +47,9 @@ export default {
     }
   },
   head() {
+    const config = getConfig()
     return {
-      title: `CuratedStack (No-Code) Template | ${this.category.name}`,
+      title: `${config.title} | ${this.category.name}`,
       meta: [
         {
           hid: 'description',
