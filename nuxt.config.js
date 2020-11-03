@@ -54,9 +54,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
-    // https://google-analytics.nuxtjs.org
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/stylelint-module'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -75,7 +73,13 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxtjs-darkmode-js-module',
-    'nuxt-floating-prompt-module'
+    'nuxt-floating-prompt-module',
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: config.google_analytics
+      }
+    ]
   ],
 
   hooks: {
@@ -115,11 +119,6 @@ export default {
         en: getLocale('en')
       }
     }
-  },
-
-  // https://google-analytics.nuxtjs.org
-  googleAnalytics: {
-    id: config.google_analytics
   },
 
   sitemap: {
