@@ -39,7 +39,14 @@ Check out websites using the CuratedStack Nocode Template:
 
 ## 📖 How to use
 
-### The no-code way
+### The no-code way - Easy way
+
+1. Go to https://t3mpl.n4no.com/editor/#manifest=../templates/curated-stack/template.yaml
+2. Use the right panel to edit the content
+3. Press "Publish" then "Save website as .zip"
+4. The full website will be inside the zip, you can host it wherever you want
+
+### The no-code way - Advanced way (with Netlify CMS)
 
 Take advantage of Netlify CMS for hosting and updating your website without code.
 Nevertheless a few options needs to be activated in order to get started, just follow the instructions below.
